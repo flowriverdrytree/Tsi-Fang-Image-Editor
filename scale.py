@@ -45,8 +45,6 @@ def main(args):
           except:
             print("Unknown image handling error")
 
-
-
 def flip_horizontal(im): return im.transpose(Image.FLIP_LEFT_RIGHT)
 def flip_vertical(im): return im.transpose(Image.FLIP_TOP_BOTTOM)
 def rotate_180(im): return im.transpose(Image.ROTATE_180)
