@@ -1,13 +1,11 @@
 #!/usr/bin/env python
-# This script take a directory path as the input, and scale all images under into 75px
+# This script take a directory path as the input, and scale all images into 75px
 # 1000px width for Landsacpe images, and 800px width for Portrait images.
 
-# import modules used here -- sys is a very standard one
 import os, argparse
 from os.path import join, exists, isdir, realpath
 from PIL import Image
 
-# Gather our code in a main() function
 def main(args):
   root_path = realpath(args.root)
 
