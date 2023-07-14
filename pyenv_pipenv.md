@@ -1,12 +1,14 @@
 # Usage
-- Run `pyenv local 3.8.8` to setup the local python version in your repo
+- `brew install pyenv pipenv` (MacOS)
+- Let's say we want to python 3.8.8 virtual env, run `pyenv install --list` to see if 3.8.8 is installed already
+- If not, run `pyenv install 3.8.8`
+- Then go to the root directory of the 3.8.8 project, run `pyenv local 3.8.8` to setup the local python version in your repo
 - Run `pipenv install --python 3.8.8` to init the Pipfile and its lock file
 - Run `pipenv shell` to activate the virtual env
 - Run `pipenv install <package name>` to install the dependency needed, add --dev for development need (testing) only
 - Run `exit` to deactivate the virtual env
 
 # pyenv
-`pyenv install --list` to see the available Python versions you can install
 
 `pyenv versions` to see the installed Python versions
 
